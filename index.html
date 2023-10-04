@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./fav logo temperature conv.png" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfhkHDneGcAOAe3IGGD4NtvWMqwfgDVaCeAB0VcUXwtHoZcvA6RL6eqjUlYmSsD_zAUw&usqp=CAU"> -->
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMh5G4B_vDRskJ9Xmo5CeOShPyV-1q2XtrA&usqp=CAU" alt="Temperature converter"> -->
+        <img src="./assets/temp_app_image.jpeg" alt="Temperature converter">
+
+    </div>
+    <h1 class="center">Temperature Converter</h1>
+    <div>
+      <label for="temperatureInput">Enter Temperature</label>
+      <input id="temperatureInput" type="number" required>
+   </div>
+    <div >
+        <label for ="from">From:</label>
+        <select id="from" required>
+          <option value="Degree Celsius(°C)">Degree Celsius(°C)</option>
+          <option value="Kelvin(k)">Kelvin(k)</option>
+          <option value="Fahrenheit(°F)">Fahrenheit(°F)</option>
+          </select>
+    </div>
+        <div>
+            <label for ="To">To:</label>
+            <select id="To" required>
+              <option value="Fahrenheit(°F)">Fahrenheit(°F)</option>
+              <option value="Degree Celsius(°C)">Degree Celsius(°C)</option>
+              <option value="Kelvin(k)">Kelvin(k)</option>
+            </select>
+        </div>
+        <div>
+            <input id="submit" class="center" id="convertButton" type='submit' value="Convert" ></input>
+        </div>
+        <div >
+            <label id="result">
+                <b>Result:</b>
+                <hr>
+            </label>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
